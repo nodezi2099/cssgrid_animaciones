@@ -1,0 +1,21 @@
+/*fuentes de texto*/
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
+
+@import "./globals.css";
+
+/*estilos aside*/
+@import "./aside.css";
+
+/*estilos article*/
+@import "./article.css";
+
+/*animaciones*/
+@import "./animaciones.css";
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  justify-content: center;
+  height: 100vh;
+}

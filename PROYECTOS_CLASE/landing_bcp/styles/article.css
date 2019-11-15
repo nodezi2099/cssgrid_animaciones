@@ -1,0 +1,115 @@
+.article__header div {
+  color: #0055a5;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  text-align: right;
+  margin: 10px;
+}
+
+.article__header--icon {
+  color: red;
+  position: relative;
+  top: 6px;
+  color: #0055a5;
+}
+
+.article__form {
+  display: grid;
+  grid-template-columns: 400px;
+  justify-content: center;
+  margin-top: 8%;
+  padding: 2em;
+}
+
+.article__form--title {
+  color: #0055a5;
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.article__form--input {
+  margin: 10px 0;
+}
+
+.article__form--input p {
+  color: #0055a5;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.article__form--input input {
+  width: 380px;
+  border: 0;
+  outline: none;
+  border-bottom: 2px solid #0055a5;
+}
+
+.article__form--icon {
+  color: #ff9333;
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+}
+
+.article__form--security {
+  border-bottom: 2px solid #0055a5;
+}
+
+.form__security--div > div {
+  width: 8px;
+  background: #f1f1f1;
+  height: 7px;
+  margin-left: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid gray;
+}
+
+.article__form--buttons {
+  margin-top: 2 0px;
+  padding: 1em;
+  text-align: center;
+}
+
+.form__buttons--btn {
+  margin: 1em;
+}
+
+.form__buttons--btn > button {
+  color: #253a47;
+  height: 45px;
+  width: 45px;
+  border-radius: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0;
+  border: 1px solid #253a47;
+  background: #f1f1f1;
+}
+
+.link__password {
+  color: #ff7800;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.form__buttons--login {
+  text-align: center;
+}
+
+.form__buttons--login button {
+  color: red;
+  width: 350px;
+  height: 40px;
+  border: 0;
+  background: #ff9333;
+  color: white;
+  font-family: "Lato", sans-serif;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}

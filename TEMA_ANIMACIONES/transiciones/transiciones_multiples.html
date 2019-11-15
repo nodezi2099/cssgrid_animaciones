@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="es">
+   <head> 
+      <meta charset="UTF-8">
+      <title>TRANSCIONES</title>
+
+      <style>
+         .circulo{
+             width:100px;
+             height:100px;
+             border-radius:50%;
+             transition:1s;
+             position:absolute;
+         }
+
+         .circulo.a{
+             background:red;
+             left:0;
+         }
+
+         .circulo.b{
+             background:blue;
+             right:0;
+         }
+
+
+         .canasta{
+             border:1px solid red;
+             position:relative;
+             height:200px; 
+         }
+
+         .canasta:hover .circulo{
+             width:200px;
+             height:200px;
+         }
+
+         .canasta:hover .circulo.a{
+             left:calc(50% - 200px);
+         }
+
+        .canasta:hover .circulo.b{
+             right:calc(50% - 200px);
+         }
+   
+    
+      </style>
+   </head>
+   
+   <body>
+       <div class="canasta"> 
+            <div class="circulo a"> </div> 
+            <div class="circulo b"> </div>
+       </div>
+   
+   </body>
+
+ </html>

@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html lang="es">
+   <head> 
+      <meta charset="UTF-8">
+      <title>TRANSFORMACIONES</title>
+
+      <style>
+
+        body{
+               display:grid;
+               align-items:center;
+               justify-items:center;
+               height:100vh;
+               perspective:200px;
+               /*perspective-origin:center;*/
+              /*perspective-origin: x y;*/
+              /*perspective-origin: top;*/
+              /*perspective-origin: bottom;*/
+              /*perspective-origin: left;*/
+              /*perspective-origin: right;*/
+              /*perspective-origin: top right;*/
+              /*perspective-origin: top left;*/
+              /*perspective-origin: bottom left;*/
+              /*perspective-origin: bottom right;*/
+        }
+
+
+          .container{
+               width:200px;
+               border:1px solid red;
+               padding:20px;
+          }
+
+         .container:hover .cuadrado{
+             /*transform:translate(80px);*/
+            /* transform:translate(30px , 50px);*/
+           /* transform:translateX(50px); */
+           /* transform:translateY(50px);*/
+            /*  transform:translateZ(50px);*/
+            transform:translate3d(x,y,z);
+
+         }
+
+          .cuadrado{
+              width:auto;
+              height:200px;
+              background:blue;
+              transition:1s;
+          }
+    
+      </style>
+   </head>
+   
+   <body>
+        <div class="container">
+          <div class="cuadrado"></div>
+        </div>
+     
+   </body>
+
+ </html>

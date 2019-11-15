@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+ <html>
+    <head>
+       <title>DISPLAYS</title>
+    </head>
+    
+     <style>
+      
+       .container{
+           display:grid;
+           grid-template:repeat(4,1fr) / repeat(3, 1fr);
+           grid-gap:10px; 
+           height:100vh;
+       }
+
+       .item{
+           border:1px solid red;
+       }
+
+       .item:nth-of-type(1){
+           background:red;
+           /*grid-column-start:1;
+           grid-column-end:3;*/
+
+           /* con span le digo que ocupe por espacios*/
+           grid-column: 1 / span 3 
+       }
+
+      
+
+     </style>
+
+     <body>
+        <section class="container">  
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div>   
+        </section>
+    </body>
+ </html>

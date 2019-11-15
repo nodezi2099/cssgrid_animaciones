@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+ <html>
+    <head>
+       <title>DISPLAYS</title>
+    </head>
+    
+     <style>
+       .container{
+         display:grid;
+         /*grid-template-columns:300px 300px 300px;*/
+         /*grid-template-rows:200px 100px;*/
+          
+          
+         /*grid-template:filas / columnas*/  
+         grid-template:300px 200px / 200px 200px 200px;
+         justify-content:center;
+
+
+         /*grid-column-gap:10px;
+         grid-row-gap:20px;*/
+         grid-gap:20px;
+       }
+
+       .item{
+           border:1px solid red;
+           padding:10px;
+       }
+
+
+       /*.item:nth-of-type(3){
+           background:blue;
+           overflow:auto;
+           /*display:subgrid;*/
+           /*display:inline-grid*/
+       }*/
+
+
+    
+
+
+     </style>
+
+     <body>
+        <section class="container">  
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">
+                  <div class="item">CONTENIDO</div> 
+                  <div class="item">CONTENIDO</div> 
+                  <div class="item">CONTENIDO</div> 
+                  <div class="item">CONTENIDO</div> 
+              </div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div>   
+        </section>
+    </body>
+ </html>

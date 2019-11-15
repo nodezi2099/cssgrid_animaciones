@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+ <html>
+    <head>
+       <title>DISPLAYS</title>
+    </head>
+    
+     <style>
+      
+       .container{
+           display:grid;
+           grid-template:repeat(3,200px) / 300px 1fr;
+           grid-gap:10px; 
+           height:100vh;
+           grid-template-areas:"header header" 
+                              "left right" 
+                              "footer footer"
+       }
+
+       .item{
+           border:1px solid red;
+       }
+
+       .header{
+          grid-area:header
+       }
+
+       .left{
+          grid-area:left;
+       }
+
+       .right{
+         grid-area:right:
+       }
+
+       .footer{
+         grid-area:footer;
+       }
+
+     </style>
+
+     <body>
+        <section class="container">  
+              <div class="item header">HEADER</div> 
+              <div class="item left">LEFT</div> 
+              <div class="item right">RIGHT</div>
+              <div class="item footer">FOOTER</div>   
+        </section>
+    </body>
+ </html>

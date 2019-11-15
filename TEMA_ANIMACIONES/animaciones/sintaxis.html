@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ANIMACIONES </title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial;
+    }
+
+    .container {
+      border: 1px solid red;
+      width: 100%;
+    }
+
+    .container:hover .cuadrado {
+      animation-play-state: paused;
+    }
+
+    .cuadrado {
+      width: 200px;
+      height: 200px;
+      background: #7dc900;
+      margin: 20px;
+      border-radius: 50%;
+      animation-name: cuadrado;
+      animation-duration: 1s;
+      /*animation-delay:1s                  /*propiedad para el tiempo de espera de la animacion*/
+      animation-iteration-count:infinite;   /*propiedad para indicar cuantas veces quiero que mi animacion de ejecute*/
+      animation-timing-function: ease;
+      /*animation-direction:reverse;          /*propìedad para cambiar el orden de la animacion de 100% a 0% */
+
+      animation-direction:alternate         /*propiedad para alternar la animacion */
+
+      animation-play-state:paused;          /*propiedad para cambiar el estado de mi animacion */
+
+      /*animation-timing-function: ease-in;
+      animation-timing-function: ease-out;
+      animation-timing-function: ease-in-out;*/
+      position: relative;
+    }
+    
+    @keyframes cuadrado {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cuadrado">
+      Hola mundo!
+    </div>
+  </div>
+</body>
+</html>

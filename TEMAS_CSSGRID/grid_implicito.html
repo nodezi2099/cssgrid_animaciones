@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+ <html>
+    <head>
+       <title>DISPLAYS</title>
+    </head>
+    
+     <style>
+        body {
+        font-family: Arial;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:repeat(4,1fr);
+            grid-gap: 5px;
+            height: 100vh;
+            grid-auto-flow:column;
+            grid-auto-rows:50px 100px;  /*con esto le indico el patron la primera fila tendra 50 , luego 100, luego 50 y asi*/
+        }
+
+        .item{
+            border:1px solid red;
+        }
+
+      
+     </style>
+
+     <body>
+        <section class="container">  
+             <div class="item">item #1</div>
+            <div class="item">item #2</div>
+            <div class="item">item #3</div>
+            <div class="item">item #4</div>
+            <div class="item">item #5</div>
+            <div class="item">item #5</div>
+            <div class="item">item #5</div>
+            <div class="item">item #5</div>
+            <div class="item">item #5</div>
+        </section>
+    </body>
+ </html>

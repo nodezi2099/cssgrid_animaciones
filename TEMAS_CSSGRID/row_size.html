@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+ <html>
+    <head>
+       <title>DISPLAYS</title>
+    </head>
+    
+     <style>
+      
+    body {
+      font-family: Arial;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+      grid-template-rows: [inicio] 200px [inicio2] 200px [final];
+      grid-gap: 5px;
+      height: 100vh;
+    }
+
+    .item {
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+    }
+
+    .item:nth-of-type(1) {
+      grid-column: inicio / destacado-end;
+      grid-row: inicio / final;
+    }
+
+    .item:nth-of-type(2) {
+      grid-column: destacado-end / destacado2-end;
+      grid-row: inicio / final;
+    }
+
+    .item:nth-of-type(3) {
+      grid-column: destacado2-end / final;
+    }
+     </style>
+
+
+
+     <body>
+        <section class="container">  
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div> 
+              <div class="item">CONTENIDO</div>     
+        </section>
+    </body>
+ </html>
